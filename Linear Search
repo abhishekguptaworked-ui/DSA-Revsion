@@ -1,0 +1,28 @@
+Linear Search ka matlab hai list mein target ko ek-ek element check karke find karna.
+
+Ex:=
+numbers = [10, 25, 7, 25, 40]
+target = 40
+
+for i in range(len(numbers)):
+    if numbers[i] == target:
+        print("Found at index:", i)
+        break
+
+Example: list mein 25 kitni baar aaya hai?
+Revision 4: Count occurrences
+
+numbers = [10, 25, 7, 25, 40, 25]
+target = 25
+count = 0
+
+for i in range(len(numbers)):
+    if numbers[i] == target:
+        count += 1
+
+print(count)
+count = 0 se shuru karte hain. Jab bhi target milta hai, count += 1 se count ek badh jaata hai.
+Time complexity: \(O(n)\), kyunki poori list check hoti hai.
+
+
+
