@@ -1,0 +1,17 @@
+1. O(1) — Constant Time
+print(numbers[0])
+Ek fixed index access karna. List badi ho ya chhoti, operation constant rehta hai.
+
+2. O(n) — Linear Time
+for i in range(len(numbers)):
+    print(numbers[i])
+Har element ko ek baar visit karna.
+
+3. O(n²) — Quadratic Time
+for i in range(n):
+    for j in range(n):
+        print(i, j)
+Nested loops; total lagbhag n × n operations.
+
+4. O(log n) — Logarithmic Time
+Har step mein search space aadha karna, jaise Binary Search.
