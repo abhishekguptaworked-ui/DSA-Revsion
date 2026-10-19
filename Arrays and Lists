@@ -1,0 +1,52 @@
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[0])  # 10
+print(numbers[2])  # 30
+
+
+2. List ko traverse karna
+numbers = [10, 20, 30, 40, 50]
+
+for i in range(len(numbers)):
+    print(numbers[i])
+
+
+Yahan:
+- len(numbers) → list mein 5 elements hain.
+- range(len(numbers)) → indexes 0, 1, 2, 3, 4.
+- numbers[i] → us index par rakhi actual value.
+Time complexity: \(O(n)\), kyunki har element ko ek baar visit karte hain.
+
+
+3. Revision Question 1
+
+numbers = [10, 20, 30, 40, 50]
+print(numbers[3])
+Answer - 3 
+
+
+Revision 2: Traversal aur range(len())
+numbers = [10, 20, 30]
+
+for i in range(len(numbers)):
+    print(numbers[i])
+output - 10 20 30 
+
+- len(numbers) = 3
+- range(3) indexes 0, 1, 2 deta hai.
+- numbers[i] har index ki value deta hai.
+Time complexity: \(O(n)\), kyunki har element ek baar visit hota hai.
+
+Question 2 — Dry run
+
+numbers = [5, 15, 25, 35]
+
+for i in range(len(numbers)):
+    if numbers[i] == 25:
+        print(i)
+
+Answer - 2
+
+Golden rule, bro:
+- print(i) → index.
+- print(numbers[i]) → value.
